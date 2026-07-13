@@ -1,5 +1,5 @@
 ---
-title: *args and **kwargs
+title: '*args and **kwargs'
 level: beginner
 order: 3
 ---
