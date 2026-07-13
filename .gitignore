@@ -220,3 +220,5 @@ __marimo__/
 # MacOS
 .DS_Store
 
+# Chroma vector database
+chroma_db/
