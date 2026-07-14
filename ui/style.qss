@@ -1,0 +1,114 @@
+/* ---- Retro Win98-style theme ---- */
+
+QMainWindow, QWidget {
+    background-color: #c0c0c0;
+    color: #000000;
+    font-family: "MS Sans Serif", "Tahoma", "Segoe UI", sans-serif;
+    font-size: 12px;
+}
+
+/* Title-bar-like header labels used above each pane */
+QLabel[role="titlebar"] {
+    background-color: #000080;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 3px 6px;
+    border: 1px solid #000000;
+}
+
+/* Group boxes act as "windows" for each pane */
+QGroupBox {
+    background-color: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    background-color: #000080;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px 6px;
+    left: 4px;
+}
+
+/* Sunken "screen" areas: text views, code editor, output */
+QPlainTextEdit, QTextEdit, QListWidget, QTreeWidget {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px inset #808080;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 12px;
+    selection-background-color: #000080;
+    selection-color: #ffffff;
+}
+
+QTreeWidget::item, QListWidget::item {
+    padding: 2px;
+}
+
+QTreeWidget::item:selected, QListWidget::item:selected {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* Buttons: classic raised bevel */
+QPushButton {
+    background-color: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    padding: 4px 12px;
+    min-width: 60px;
+}
+
+QPushButton:pressed {
+    border: 2px inset #808080;
+}
+
+QPushButton:disabled {
+    color: #808080;
+}
+
+/* Line edit (chat input) */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px inset #808080;
+    padding: 3px;
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+/* Splitters: thin grey handles like old resize bars */
+QSplitter::handle {
+    background-color: #c0c0c0;
+    border: 1px solid #808080;
+}
+QSplitter::handle:horizontal { width: 4px; }
+QSplitter::handle:vertical { height: 4px; }
+
+/* Scrollbars: flat retro style */
+QScrollBar:vertical {
+    background: #c0c0c0;
+    width: 16px;
+    border: 1px solid #808080;
+}
+QScrollBar::handle:vertical {
+    background: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: #c0c0c0;
+    border: 1px outset #dfdfdf;
+    height: 16px;
+}
+
+QScrollBar:horizontal {
+    background: #c0c0c0;
+    height: 16px;
+    border: 1px solid #808080;
+}
+QScrollBar::handle:horizontal {
+    background: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    min-width: 20px;
+}
